@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   @Input('nearClipping') public nearClippingPlane: number = 1;
 
-  @Input('farClipping') public farClippingPlane: number = 1000;
+  @Input('farClipping') public farClippingPlane: number = 10000;
 
   //? Helper Properties (Private Properties);
 
@@ -74,8 +74,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     //* Scene
     this.scene = new THREE.Scene();
     this.scene.background = new THREE.Color(0x50dfb3);
+    //this.scene.background = new THREE.Color(0x000000);
     this.scene.add(this.cube);
-    console.log(this.scene);
+    for(let i = 0; i < 250; i++){
+      this.addStar();
+    }
+
+
     //*Camera
     let aspectRatio = this.getAspectRatio();
     this.camera = new THREE.PerspectiveCamera(
@@ -107,19 +112,25 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   private addStar() {
     let texture: string = "/assets/tanner.jpg";
 
-    let sphereGeo = new THREE.SphereGeometry(0.05, 6, 6);
-    let sphereMat = new THREE.MeshStandardMaterial({map: this.loader.load("/assets/2k_sun.jpg")});
+
+
+    let sphereGeo = new THREE.SphereGeometry(0.25, 6, 6);
+    let sphereMat = new THREE.MeshStandardMaterial({color: 0xffffff});
     let star = new THREE.Mesh(sphereGeo, sphereMat);
 
 
-    for(let i = 0; i < 50; i++){
 
+    //for(let i = 0; i < 50; i++){
       // @ts-ignore
       const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(50));
 
       star.position.set(x, y, z);
+      console.log(x, y, z);
       this.scene.add(star);
-    }
+      console.log(this.scene.add(star));
+   // }
+
+
 
   }
 
@@ -149,7 +160,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     (function render() {
       requestAnimationFrame(render);
       component.animateCube();
-      component.addStar();
       component.renderer.render(component.scene, component.camera);
     }());
   }
