@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Sdev1040Component } from './sdev1040.component';
+import { Sdev2610Component } from './sdev2610.component';
 
-describe('SDEV1040Component', () => {
-  let component: Sdev1040Component;
-  let fixture: ComponentFixture<Sdev1040Component>;
+describe('SDEV2610Component', () => {
+  let component: Sdev2610Component;
+  let fixture: ComponentFixture<Sdev2610Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Sdev1040Component ]
+      declarations: [ Sdev2610Component ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Sdev1040Component);
+    fixture = TestBed.createComponent(Sdev2610Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

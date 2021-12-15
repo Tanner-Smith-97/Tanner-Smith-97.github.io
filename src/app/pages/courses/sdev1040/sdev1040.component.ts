@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sdev1040.component.html',
   styleUrls: ['./sdev1040.component.css', '../../pagesStyles.css']
 })
-export class SDEV1040Component implements OnInit {
+export class Sdev1040Component implements OnInit {
 
   constructor() { }
 
