@@ -1,0 +1,31 @@
+/*.main {*/
+/*  justify-content: center;*/
+/*}*/
+
+/*#sample-chart .column {*/
+/*  min-height: 100px;*/
+/*  max-width: 300px;*/
+/*  margin: 0 auto;*/
+/*}*/
+/*<tr *ngFor="let item of numList">*/
+/*<td [style.height]="item.width" style="background: red"></td>*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*margin: 0;*/
+}
+
+#data-example-2 {
+  height: 200px;
+  max-width: 1500px;
+  margin: 100px auto;
+}
+
+td{
+  /*border: 1px solid black !important;*/
+  margin-right: 2px !important;
+}
+

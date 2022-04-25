@@ -44,6 +44,7 @@ import { DiscordBotComponent } from './projects/discord-bot/discord-bot.componen
 import { Sdev1040Component } from './pages/courses/sdev1040/sdev1040.component';
 import { Sdev2610Component } from './pages/courses/sdev2610/sdev2610.component';
 import { SDEV2520Component } from './pages/courses/sdev2520/sdev2520.component';
+import { SortingSamplesComponent } from './projects/sorting-samples/sorting-samples.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { SDEV2520Component } from './pages/courses/sdev2520/sdev2520.component';
     DiscordBotComponent,
     Sdev1040Component,
     Sdev2610Component,
-    SDEV2520Component
+    SDEV2520Component,
+    SortingSamplesComponent
   ],
   imports: [
     BrowserModule,

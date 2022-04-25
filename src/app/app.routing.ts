@@ -17,6 +17,7 @@ import {SDEV2520Component} from "./pages/courses/sdev2520/sdev2520.component";
 import {Sdev2610Component} from "./pages/courses/sdev2610/sdev2610.component";
 import {ContactMeComponent} from "./contact-me/contact-me.component";
 import {TextGameComponent} from "./text-game/text-game.component";
+import {SortingSamplesComponent} from "./projects/sorting-samples/sorting-samples.component";
 import {DiscordBotComponent} from "./projects/discord-bot/discord-bot.component";
 import {ProjectsHomeComponent} from "./projects/projects-home/projects-home.component";
 
@@ -38,6 +39,7 @@ const routes: Routes = [
   {path: 'sdev2520', component: SDEV2520Component},
   {path: 'sdev2610', component: Sdev2610Component},
   {path: 'projects-home', component: ProjectsHomeComponent},
+  {path: 'sorting-samples', component: SortingSamplesComponent},
   {path: 'text-game', component: TextGameComponent},
   {path: 'discord-bot', component: DiscordBotComponent},
   {path: 'contact-me', component: ContactMeComponent},

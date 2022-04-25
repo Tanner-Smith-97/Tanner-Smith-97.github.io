@@ -4,7 +4,6 @@
   <button class="mat-focus-indicator" docs-button mat-button mat-button-base routerLink="/about-me">ABOUT ME</button>
   <span class="navSpacer">/</span>
 
-
   <button class="mat-focus-indicator" mat-button mat-button-base [matMenuTriggerFor]="menu"
           #menuTrigger="matMenuTrigger" (mouseover)="menuTrigger.openMenu()" routerLink="/course-work">COURSE WORK
   </button>
@@ -27,21 +26,19 @@
         </span>
   </mat-menu>
 
-
   <span class="navSpacer">/</span>
   <!--  <button class="mat-focus-indicator" docs-button mat-button mat-button-base routerLink="/projects-home">PROJECTS</button>-->
-
 
   <button class="mat-focus-indicator" mat-button mat-button-base [matMenuTriggerFor]="projects"
           #menuTriggerProj="matMenuTrigger" (mouseover)="menuTriggerProj.openMenu()" routerLink="/course-work">PROJECTS
   </button>
   <mat-menu #projects="matMenu" [overlapTrigger]="false">
         <span (mouseleave)="menuTriggerProj.closeMenu()">
+    <button mat-menu-item routerLink="/sorting-samples">Sorting Samples</button>
     <button mat-menu-item routerLink="/text-game">Text Game</button>
     <button mat-menu-item routerLink="/discord-bot">Discord Bot</button>
         </span>
   </mat-menu>
-
 
   <span class="navSpacer">/</span>
   <button class="mat-focus-indicator" docs-button mat-button mat-button-base routerLink="/contact-me">CONTACT ME

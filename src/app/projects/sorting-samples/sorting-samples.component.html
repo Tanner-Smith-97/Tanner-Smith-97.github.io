@@ -1,0 +1,33 @@
+<button mat-menu-item (click)="onClick_BogoSort()">Bogo Sort</button>
+<button mat-menu-item (click)="onClick_BubbleSort()">Bubble Sort</button>
+<!--<div id="sample-chart">-->
+<table id="data-example-2" class="charts-css column show-heading">
+  <caption> Iterations: {{iterations}} </caption>
+  <tbody>
+  <tr *ngFor="let item of bubbleSortObservable$ | async; let i = index">
+<!--    <td *ngIf="i === (currentIndex$ | async)" style="&#45;&#45;size: {{item / 100}}; &#45;&#45;color: red"></td>-->
+<!--    <td *ngIf="i !== (currentIndex$ | async)" style="&#45;&#45;size: {{item / 100}}; &#45;&#45;color: blue"></td>-->
+    <td *ngIf="i === firstIndex" style="--size: {{item / 100}}; --color: grey"></td>
+    <td *ngIf="i === secondIndex" style="--size: {{item / 100}}; --color: darkgrey"></td>
+    <td *ngIf="i !== firstIndex && i !== secondIndex" style="--size: {{item / 100}}; --color: blue"></td>
+  </tr>
+<!--  <tr>-->
+<!--    <td style="&#45;&#45;size: calc( 40 / 100 );"> $40K </td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td style="&#45;&#45;size: calc( 60 / 100 );"> $60K </td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td style="&#45;&#45;size: calc( 75 / 100 );"> $75K </td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td style="&#45;&#45;size: calc( 90 / 100 );"> $90K </td>-->
+<!--  </tr>-->
+<!--  <tr>-->
+<!--    <td style="&#45;&#45;size: calc( 100 / 100 );"> $100K </td>-->
+<!--  </tr>-->
+<!--  </tbody>-->
+</table>
+
+
+<!--</div>-->

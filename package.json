@@ -22,6 +22,7 @@
     "@angular/router": "~12.1.2",
     "@ionic/angular": "^5.8.1",
     "@types/node-mailjet": "^3.3.7",
+    "charts.css": "^0.9.0",
     "node-mailjet": "^3.3.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
